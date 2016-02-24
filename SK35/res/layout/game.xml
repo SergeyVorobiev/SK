@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/left_panel" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <GridView android:id="@id/panel_instruments" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="1" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/gl_main" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/right_panel" android:layout_toRightOf="@id/left_panel">
+        <FrameLayout android:layout_gravity="top" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="@dimen/margin_top">
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/top_string" android:layout_width="fill_parent" android:layout_height="@dimen/height_top_string" android:text="@string/app_name" />
+        </FrameLayout>
+        <com.vorobiev.sk.GLView android:id="@id/gl_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_top" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/congratulation" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:longClickable="false" android:duplicateParentState="false" android:layout_width="300.0dip" android:layout_height="150.0dip">
+            <ImageView android:id="@id/congratulationImage" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:clickable="false" android:longClickable="false" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/empty" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/congratulationText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_ten_dp" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:id="@id/score" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:id="@id/open_gl" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_gl" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:id="@id/fps" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/resource_change_cost" android:background="@drawable/background_pop_left" android:visibility="invisible" android:layout_width="120.0dip" android:layout_height="42.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/imagePopResource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gold_mark" android:contentDescription="@string/image_resource" />
+                <ImageView android:layout_gravity="center" android:id="@id/imagePopUpDown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_up" android:contentDescription="@string/image_resource" />
+                <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center" android:id="@id/textPopCost" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <SlidingDrawer android:layout_gravity="bottom" android:id="@id/sliding_builder" android:layout_width="fill_parent" android:layout_height="240.0dip" android:handle="@id/handle" android:content="@id/content">
+            <ImageButton android:id="@id/handle" android:background="@drawable/btn_build" android:layout_width="60.0dip" android:layout_height="30.0dip" android:contentDescription="@string/open_info_build" />
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/info_builder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <HorizontalScrollView android:id="@id/scroll_builder" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/image_builder" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                </HorizontalScrollView>
+            </LinearLayout>
+        </SlidingDrawer>
+        <FrameLayout android:layout_gravity="right" android:id="@id/pop_image" android:background="@drawable/pop_fruct_two" android:visibility="invisible" android:layout_width="128.0dip" android:layout_height="64.0dip">
+            <TextView android:textColor="#ffffffff" android:layout_gravity="bottom|center|right" android:id="@id/pop_text_mounth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:layout_marginBottom="3.0dip" android:contentDescription="@string/empty" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/right_panel" android:layout_width="120.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/right_general_panel" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center" android:id="@id/radar" android:background="#ffaa0000" android:padding="2.0dip" android:layout_width="120.0dip" android:layout_height="70.0dip" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="center" android:id="@id/my_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="center" android:id="@id/my_season" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/btn_next_week">
+                <ImageButton android:id="@id/btn_day" android:background="@drawable/day_mark" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@string/btn_next_day" />
+                <ImageButton android:id="@id/btn_week" android:background="@drawable/week_mark" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@string/btn_next_week" />
+                <ImageButton android:id="@id/btn_mounth" android:background="@drawable/mounth_mark" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@string/btn_next_mounth" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="5.0dip" style="?android:attr/progressBarStyleHorizontal" />
+            <View android:id="@id/line" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <ScrollView android:id="@id/right_panel_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/right_panel_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

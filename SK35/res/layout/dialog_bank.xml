@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:layout_gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string1_bank" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string3_bank" />
+        <TextView android:textColor="#ffff0000" android:layout_gravity="center" android:id="@id/max_summ" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:layout_gravity="left" android:id="@id/text_void" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/text_void2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:layout_gravity="left" android:id="@id/current_tax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_one" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/one_number" style="@style/AppTheme" />
+            <Button android:id="@id/btn_two" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/two_number" style="@style/AppTheme" />
+            <Button android:id="@id/btn_three" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/three_number" style="@style/AppTheme" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_four" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/four_number" style="@style/AppTheme" />
+            <Button android:id="@id/btn_five" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/five_number" style="@style/AppTheme" />
+            <Button android:id="@id/btn_six" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/six_number" style="@style/AppTheme" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_seven" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/seven_number" style="@style/AppTheme" />
+            <Button android:id="@id/btn_eight" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/eight_number" style="@style/AppTheme" />
+            <Button android:id="@id/btn_nine" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/nine_number" style="@style/AppTheme" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_clear" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/cl" style="@style/AppTheme" />
+            <Button android:id="@id/btn_zero" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/zero_number" style="@style/AppTheme" />
+            <Button android:id="@id/btn_back" android:background="@drawable/btn_number_up" android:layout_width="@dimen/btn_size" android:layout_height="@dimen/btn_size" android:text="@string/back_number" style="@style/AppTheme" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/score_background" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffff00" android:gravity="center" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:text="TextView" android:drawableLeft="@drawable/animal" android:layout_weight="1.0" />
+    <TextView android:textColor="#ffffff00" android:gravity="center" android:id="@id/old_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1.0" />
+    <TextView android:textColor="#ffffff00" android:gravity="center" android:id="@id/new_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1.0" />
+</LinearLayout>

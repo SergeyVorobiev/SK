@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffe6ea93" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vorobiev.sk.MyTextView android:gravity="center" android:id="@id/name_resource" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.vorobiev.sk.MyTextView android:gravity="center" android:id="@id/cost_sell" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.vorobiev.sk.MyTextView android:gravity="center" android:id="@id/cost_buy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.vorobiev.sk.MyTextView android:gravity="center" android:id="@id/prognos" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vorobiev.surfaceHolder.FastRenderView android:id="@id/surfaceView_pause" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/btn_pause_continue" android:background="@drawable/btn_pause_continue_up" android:layout_width="150.0dip" android:layout_height="46.0dip" android:layout_marginBottom="@dimen/margin_five_dp" />
+        <Button android:id="@id/btn_pause_save" android:background="@drawable/btn_pause_save_up" android:layout_width="150.0dip" android:layout_height="46.0dip" android:layout_marginBottom="@dimen/margin_five_dp" />
+        <Button android:id="@id/btn_pause_help" android:background="@drawable/btn_pause_help_up" android:layout_width="150.0dip" android:layout_height="46.0dip" android:layout_marginBottom="@dimen/margin_five_dp" />
+        <Button android:id="@id/btn_pause_cry" android:background="@drawable/btn_whiteflag_up" android:layout_width="150.0dip" android:layout_height="46.0dip" android:layout_marginBottom="@dimen/margin_five_dp" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_pause_exit" android:background="@drawable/btn_pause_exit_up" android:layout_width="150.0dip" android:layout_height="46.0dip" />
+            <Button android:id="@id/btn_pause_sound" android:background="@drawable/btn_sound_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_ten_dp" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

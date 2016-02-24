@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/background_score" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center|right" android:id="@id/score" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="@dimen/margin_ten_dp" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_mln" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mln_picture" android:scaleType="fitCenter" android:contentDescription="@string/one_number" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="center" android:id="@id/mln_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center" android:id="@id/mln_data" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score_profit" />
+            <ScrollView android:id="@id/scrollView1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center|right" android:id="@id/score_gold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/gold_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_bread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/bread_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_fruct" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/fruct_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_veget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/veget_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_meat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/meat_mark" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_mlrd" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/ImageView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mlrd_picture" android:scaleType="fitCenter" android:contentDescription="@string/one_number" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="center" android:id="@id/mlrd_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center" android:id="@id/mlrd_data" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center" android:id="@id/TextView08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score_profit" />
+            <ScrollView android:id="@id/ScrollView01" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center|right" android:id="@id/score_fish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/fish_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_mush" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/mush_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_honey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/honey_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_coal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/mine_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_metal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/metal_mark" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_trln" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/ImageView02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/trln_picture" android:scaleType="fitCenter" android:contentDescription="@string/one_number" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="center" android:id="@id/trln_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center" android:id="@id/trln_data" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/TextView12" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_gravity="center" android:id="@id/TextView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score_profit" />
+            <ScrollView android:id="@id/ScrollView02" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center|right" android:id="@id/score_oil" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/oil_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_stone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/stone_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_water" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/water_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_forest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/forest_mark" />
+                    <TextView android:gravity="center|right" android:id="@id/score_electro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_five_dp" android:drawableLeft="@drawable/electro_mark" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

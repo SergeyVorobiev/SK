@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vorobiev.surfaceHolder.FastRenderView android:id="@id/surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/label_main" android:layout_width="180.0dip" android:layout_height="90.0dip" android:src="@drawable/background_label" android:contentDescription="@string/image_resource" />
+        <Button android:id="@id/btn_continue_game" android:background="@drawable/btn_continue" android:layout_width="170.0dip" android:layout_height="48.0dip" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/records" android:background="@drawable/btn_records" android:layout_width="170.0dip" android:layout_height="48.0dip" style="android:buttonBar" />
+            <Button android:id="@id/start_game" android:background="@drawable/btn_new_game" android:layout_width="170.0dip" android:layout_height="48.0dip" style="android:buttonBar" />
+            <Button android:id="@id/authors" android:background="@drawable/btn_authors" android:layout_width="170.0dip" android:layout_height="48.0dip" style="android:buttonBar" />
+        </LinearLayout>
+        <Button android:id="@id/btn_main_help" android:background="@drawable/btn_help" android:layout_width="170.0dip" android:layout_height="48.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_main_exit" android:background="@drawable/btn_exit" android:layout_width="170.0dip" android:layout_height="48.0dip" />
+            <Button android:id="@id/btn_main_volume" android:background="@drawable/btn_sound_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_ten_dp" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

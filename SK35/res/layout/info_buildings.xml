@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tablo" android:layout_width="fill_parent" android:layout_height="170.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff0120aa" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/test_string" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:id="@id/working" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/name" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:id="@id/where_build" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_below="@id/working" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="12.0sp" android:id="@id/life" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/where_build" android:layout_alignLeft="@id/where_build" />
+    <TextView android:textSize="12.0sp" android:id="@id/workmans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/life" android:layout_alignLeft="@id/life" />
+    <TextView android:textSize="12.0sp" android:id="@id/housing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/workmans" android:layout_alignLeft="@id/workmans" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff00aa00" android:id="@id/profit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/housing" android:layout_alignLeft="@id/housing" />
+    <TextView android:textSize="12.0sp" android:id="@id/profitResource1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/profit" android:layout_alignLeft="@id/profit" />
+    <TextView android:textSize="12.0sp" android:id="@id/profitResource2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/profitResource1" android:layout_alignLeft="@id/profitResource1" />
+    <TextView android:textSize="12.0sp" android:id="@id/mine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/expense" android:layout_alignLeft="@id/expense" />
+    <TextView android:textSize="12.0sp" android:id="@id/metal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/mine" android:layout_alignLeft="@id/mine" />
+    <TextView android:textSize="12.0sp" android:id="@id/oil" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/metal" android:layout_alignLeft="@id/metal" />
+    <TextView android:textSize="12.0sp" android:id="@id/stone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/oil" android:layout_alignLeft="@id/oil" />
+    <TextView android:textSize="12.0sp" android:id="@id/water" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/stone" android:layout_alignLeft="@id/stone" />
+    <TextView android:textSize="12.0sp" android:id="@id/forest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/water" android:layout_alignLeft="@id/water" />
+    <TextView android:textSize="12.0sp" android:id="@id/electro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/forest" android:layout_alignLeft="@id/forest" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffaa0000" android:id="@id/expense" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="76.0dip" android:layout_below="@id/working" android:layout_alignParentRight="true" />
+    <Button android:id="@id/btn_center_buy" android:background="@drawable/button_building_up" android:visibility="invisible" android:layout_width="110.0dip" android:layout_height="50.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>
